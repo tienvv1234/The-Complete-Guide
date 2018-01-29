@@ -6,3 +6,4 @@ abc
 asdfasdf
 thu phat nua
 test phat cuoi file readme
+test phat cuoi file readme local
