@@ -1,0 +1,48 @@
+<h1>Demo Directives</h1>
+<hr/>
+<h2>Ng If</h2>
+<input type="text" placeholder="Enter something you like" [(ngModel)]="value" />
+<span *ngIf="value;else noData">Data output : {{value}}</span>
+<ng-template #noData>
+    Data output :
+    <span>Input empty</span>
+</ng-template>
+
+<br/>
+
+<h2>Ng Switch</h2>
+<select [(ngModel)]="person" style="display:inline-block">
+    <option value="1">First Case</option>
+    <option value="2">Second Case</option>
+    <option value="3">Third Case</option>
+    <option value="0">Default Case</option>
+</select>
+<ul [ngSwitch]="person" style="display:inline-block">
+    <li *ngSwitchCase="1">First Case</li>
+    <li *ngSwitchCase="2">Second Case</li>
+    <li *ngSwitchCase="3">Third Case</li>
+    <li *ngSwitchDefault>Default Case</li>
+</ul>
+
+<br/>
+
+<h2>ngFor and ngIf</h2>
+<div *ngFor="let d of datas;let i=index">
+    <p *ngIf="d.key % 2 == 0">Index ={{i}} --- Key = {{d.key}} --- Value = {{d.value}}</p>
+    <p *ngFor="let item of d.items;let j=index">
+        <span *ngIf="d.key % 2 == 0">{{item.value}}</span>
+    </p>
+</div>
+
+<br/>
+
+<h2>NgSwitch with NgFor and NgClass</h2>
+
+<div *ngFor="let id of ids">
+    Id is {{id}}
+    <div ngSwitch="{{id%2}}" style="display: inline-block;">
+        <div *ngSwitchCase="'0'" [ngClass]="'red'">I am Even.</div>
+        <div *ngSwitchCase="'1'" [ngClass]="'green'">I am Odd.</div>
+        <div *ngSwitchDefault>Nothing Found.</div>
+    </div>
+</div>

@@ -36,3 +36,5 @@ intimidating: hăm dọa, thị oai (verb)
 ride: đi dạo(verb)
 double curly : xoăn đôi
 # folder e2e for end to end testing
+
+# Selector In decorator: 3 type (tags(abc), attribute([abc]), class(.abc) in typescript) (tags(<abc></abc>), attribute(div abc), class(class = abc) in html)
