@@ -48,3 +48,5 @@ create commit 3 for develop branch
 create commit 3 for develop branch
 
 create commit 4 for feature 2 branch
+
+create commit 5 for feature 3 branch
