@@ -38,3 +38,4 @@ double curly : xoăn đôi
 # folder e2e for end to end testing
 
 create develop branch
+create commit 1 for develop branch
