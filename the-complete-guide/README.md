@@ -38,7 +38,6 @@ double curly : xoăn đôi
 # folder e2e for end to end testing
 
 create develop branch
-
 create branch feature/1
 create commit 2 for feature/1
 
@@ -53,3 +52,7 @@ create commit 3 for develop branch
 create commit 3 for develop branch
 
 create commit 4 for feature 2 branch
+create commit 4 for feature 2 branch
+
+create commit 5 for feature 3 branch
+
